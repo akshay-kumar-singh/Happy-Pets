@@ -1,128 +1,212 @@
-.services{
-    display:flex;
-    flex-direction: column;
+/* Services General Styling */
+.services {
+  display: flex;
+  flex-direction: column;
 }
 
-.services-page1{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #ffdbfb;
+/* First Section */
+.services-page1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffdbfb;
+  padding: 50px;
+}
+
+.services-page1 img {
+  max-width: 40%;
+  height: auto;
 }
 
 .services-page1 div {
-    display: flex;
-    flex-direction: column;
-    padding-right:5%;
-    gap:20px;
+  display: flex;
+  flex-direction: column;
+  padding-right: 5%;
+  gap: 20px;
 }
 
-.ourservices{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding:20px;
-    background-color: palevioletred;
-    font-family: "Caveat", cursive;
-    font-size: 20px;
-   
+.ourservices {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: palevioletred;
+  font-family: "Caveat", cursive;
+  font-size: 3rem;
 }
 
-.services-page1 div h2{
-    font-family: "Roboto Mono", monospace;
-    font-size: 50px;
-    font-weight: bold;
+.services-page1 div h2 {
+  font-family: "Roboto Mono", monospace;
+  font-size: 3rem;
+  font-weight: bold;
 }
 
-.services-page1 div p{
-    font-family: "Caveat", cursive;
-    font-size: 40px;
+.services-page1 div p {
+  font-family: "Caveat", cursive;
+  font-size: 1.5rem;
 }
 
-
- 
-
-/* -------------------------Services page-------------------------- */
-
-
-
-
-  .services-page2 {
-    display: flex;
-    flex-direction: column;
-    /* background-image: url("./image/background1.png"); */
-    background-color: #ffdbfb;
-    padding: 20px;
+/* Services Sections */
+.services-page2 {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffdbfb;
+  padding: 20px;
 }
 
 .services-page22 {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 100px;
-    padding: 30px 120px;
-    position: relative;
-}
-
-.services-page22 img:first-child {
-    position: relative;
-    z-index: 2;
-    border-radius: 40px;
-}
-
-.services-page22 img:nth-child(2) {
-    position: absolute;
-    border-radius: 20px;
-    left: 2%;
-    bottom: -20%;
-    z-index: 1;
-}
-
-.services-page22 div {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 20px;
-    flex: 1;
-}
-
-.services-page22 h2 {
-    font-family: "Caveat", cursive;
-    font-size: 50px;
-    color: red;
-    margin: 0;
-}
-
-.services-page22 p {
-    color: red;
-}
-
-.services-page22 button {
-    align-self: flex-start;
-    background-color: red;
-    border: none;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.services-page22 button:hover {
-    background-color: darkred;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 50px;
+  padding: 30px 100px;
+  position: relative;
 }
 
 .services-page22.reverse {
-    flex-direction: row-reverse;
+  flex-direction: row-reverse;
 }
 
-.services-page22.reverse img:nth-child(2) {
-    left: auto;
-    right: 2%;
+.services-page22.low {
+  margin-bottom: 50px;
 }
 
-.services-page22.low img:nth-child(2){
-    top:-30%;
-    left:20%;
+/* Circular and Main Image Styling */
+.image-container {
+  position: relative;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* width: 220px; */
+  
+}
+
+.circle-image {
+  width: 68%;
+  height: auto;
+  z-index: 1;
+}
+
+.main-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 45%;
+  height: auto;
+  z-index: 2;
+}
+.services-page22 div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1;
+}
+
+.services-page22 h2 {
+  font-family: "Caveat", cursive;
+  font-size: 2.5rem;
+  color: red;
+  margin: 0;
+}
+
+.services-page22 p {
+  color: red;
+  font-size: 1.2rem;
+}
+
+.services-page22 button {
+  align-self: flex-start;
+  background-color: red;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.services-page22 button:hover {
+  background-color: darkred;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 1024px) {
+  .services-page22 {
+    flex-direction: column;
+    padding: 20px;
+    gap: 30px;
+  }
+
+  .image-container {
+    width: 180px;
+    height: 180px;
+  }
+
+  .main-image {
+    width: 70%;
+  }
+}
+
+@media (max-width: 768px) {
+  .services-page22 {
+    flex-direction: column;
+    padding: 20px;
+    gap: 30px;
+  }
+
+  .image-container {
+    width: 160px;
+    height: 160px;
+  }
+
+  .main-image {
+    width: 60%;
+  }
+
+  .services-page22 h2 {
+    font-size: 2rem;
+  }
+
+  .services-page22 p {
+    font-size: 1rem;
+  }
+
+  .services-page22 button {
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .services-page22 {
+    padding: 10px;
+    gap: 20px;
+  }
+
+  .image-container {
+    width: 130px;
+    height: 130px;
+  }
+
+  .circle-image {
+    width: 100%;
+  }
+
+  .main-image {
+    width: 50%;
+  }
+
+  .services-page22 h2 {
+    font-size: 1.8rem;
+  }
+
+  .services-page22 p {
+    font-size: 0.9rem;
+  }
+
+  .services-page22 button {
+    padding: 8px 14px;
+  }
 }

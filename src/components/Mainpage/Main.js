@@ -25,7 +25,7 @@ function Main() {
     <div className="main">
       <div className="main-page">
         <img src={dog1} alt="dog" className="dog-image" />
-        <div>
+        <div className="desc">
           <h1>Give your pets</h1>
           <p>
             AN EVERYDAY <br></br> WAGGING TAIL <br></br> EXPERIENCE
@@ -96,15 +96,15 @@ function Main() {
 
       {/* Fourth page Services to help page -------------------------------------------------------------------*/}
 
-     
+      <h2 className="heading"> Services to help your pet feel more loved</h2>
       <div className="main-fourth-page2">
-        <h2> Services to help your pet feel more loved</h2>
+        
 
         
         <div className="main-fourth-page22">
           <div className="main-fourth-doghaircut">
             <img src={dog3haircut} alt="dog haircut" />
-            <div>
+            <div className="main-fourth-service">
               <p>Pamper your pet with our top-notch grooming services</p>
               <button>Pet's Grooming</button>
             </div>
@@ -130,8 +130,9 @@ function Main() {
       </div>
 
       {/* ------------Forth We care about your pet  */}
+      <h2 className="heading">We care About Your Pet's Wellbeing</h2>
       <div className="main-fourth-page2">
-        <h2>We care About Your Pet's Wellbeing</h2>
+    
 
         <div className="main-fourth-page22">
           <div className="fourth-page23">
@@ -144,10 +145,10 @@ function Main() {
 
           <div className="fourth-page23">
             <img src={closeupdog} alt="cat" />
-            <div>
+            
               <p>Reliable medication to keep your pets healthy and happy</p>
               <button>Pet's Health</button>
-            </div>
+           
           </div>
         </div>
       </div>
