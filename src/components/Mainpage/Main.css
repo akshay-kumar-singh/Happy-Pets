@@ -606,3 +606,21 @@ body{
      
 
 }
+@media(max-width:768px){
+    .main-page .dog-image{
+        margin-bottom:225px ;
+        width: 24%;
+    }
+
+    .desc{
+        font-size:10px ;
+    }
+    .main-fourth-page22 .fourth-page23{
+        flex-direction: column;
+    }
+
+    body{
+        background-color: none;
+    }
+
+}
