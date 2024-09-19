@@ -15,7 +15,7 @@ body{
     background-image: url("../../assets/images/bone.png");
     position: relative;
     padding: 20px;
-    height: 65vh;
+    height: 100vh; /* height=65vh*/
 }
 
 .main-page img {
@@ -28,6 +28,7 @@ body{
     bottom: -15%;
     left: 0;
     max-width: 40%;
+    height: 100vh;
 }
 
 .main-page div {
@@ -57,6 +58,7 @@ body{
     border-radius: 20px;
     /* position: relative; */
     /* max-width: 80%; */
+    height: 100vh;
 }
 
 
@@ -585,18 +587,172 @@ body{
     color: white;
 } */
 
+@media (max-width:320px){
+    body{
+        background-color: none;
+        overflow-x: none;
+
+    } 
+    .main-page{
+        height: 68vh;
+    }
+    .main-fourth-doghaircut{
+        flex-direction: column;
+    }
+    .dog-imag{   
+    position: absolute;
+    width: 107px;
+    top: 30px;
+    height: -webkit-fill-available;
+    }
+
+    .girl-image{
+        height: -webkit-fill-available;
+    width: 128px;
+    }
+
+    .desc p{
+        font-size: .9rem;
+    }
+    .desc h1{
+        font-size: 1rem;
+    }
+    .main-vm{
+        flex-direction: column;
+    }
+    .main-vm img{
+        width: -webkit-fill-available;
+    }
+    .main-page2{
+        gap: 2.9rem;
+        flex-direction: column;
+    }
+
+    .main-fourth-service{
+        flex-direction: column;
+        width: 100vw;
+    }
+    
+    .image3{
+        margin: 0 0px 65px 69px;
+    width: 31vw;
+    }
+    .image2{
+        
+       
+    margin-left: 27px;
+    margin-bottom: 135px;
+    width: 30%;
+        }
+        .image1{
+        
+            margin-bottom: 82px;
+            width: 31vw;
+            }
+
+            .secondlastpage{
+                padding-right: 5%;
+                font-size: .6rem;
+                margin-bottom: 114px;
+            }
+            .main-second-lastpage{
+                height: 100vh;
+                flex-direction: column;
+            }
+            .main-fourth-page22{
+                flex-direction: column;
+                width: 100vw;
+            }
+            .fourth-page23{
+                flex-direction: column;
+            }
+            .fourth-page23 img{
+                width: 69vw;
+            }
+        
+}
+
+
+
+
+@media (max-width:768px){
+    body{
+        background-color: none;
+        overflow-x: none;
+
+    } 
+    .dog-imag{   
+    position: absolute;
+    width: 107px;
+    top: 30px;
+    }
+
+    .girl-image{
+        width: 145px;
+    }
+
+    .desc p{
+        font-size: 1.9rem;
+    }
+    .main-vm{
+        flex-direction: column;
+    }
+    .main-vm img{
+        width: -webkit-fill-available;
+    }
+    .main-page2{
+        gap: 2.9rem;
+    }
+
+    .main-fourth-service{
+        flex-direction: column;
+        width: 100vw;
+    }
+    
+    .image3{
+        margin: 0 0px 65px 69px;
+    width: 31vw;
+    }
+    .image2{
+        
+       
+    margin-left: 27px;
+    margin-bottom: 135px;
+    width: 30%;
+        }
+        .image1{
+        
+            margin-bottom: 82px;
+            width: 31vw;
+            }
+
+            .secondlastpage{
+                padding-right: 5%;
+                font-size: .6rem;
+            }
+            .main-second-lastpage{
+                height: 100vh;
+            }
+            .main-fourth-page22{
+                flex-direction: column;
+                width: 100vw;
+            }
+        
+}
+
 
 @media(max-width:1400px){
     .main-page .dog-image{
-        margin-bottom:225px ;
-        width: 24%;
+        /* margin-bottom:225px ; */
+        width: 24vw;
     }
 
     .desc{
         font-size:10px ;
     }
-    .main-fourth-page22 .fourth-page23{
+    .main-fourth-page22{
         flex-direction: column;
+        width: 100vw;
     }
 
     body{
@@ -605,22 +761,4 @@ body{
 
      
 
-}
-@media(max-width:768px){
-    .main-page .dog-image{
-        margin-bottom:225px ;
-        width: 24%;
-    }
-
-    .desc{
-        font-size:10px ;
-    }
-    .main-fourth-page22 .fourth-page23{
-        flex-direction: column;
-    }
-
-    body{
-        background-color: none;
-    }
-
-}
+} 

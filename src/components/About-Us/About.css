@@ -104,6 +104,38 @@
     gap: 7vw;
 }
 
+@media (max-width: 1024px) {
+    .aboutus {
+        height: 50vh;
+        font-size: 8vw;
+    }
+
+    .aboutus h1 {
+        font-size: 10vw;
+    }
+
+    .aboutus-page22 {
+        flex-direction: column;
+    }
+
+    .aboutus-page23 h2 {
+        font-size: 5vw;
+    }
+
+    .image-container {
+        margin-top: 20px;
+    }
+
+    .aboutus-bottom {
+        font-size: 6vw;
+        gap: 10vw;
+    }
+    .bottom-img{
+        width: -webkit-fill-available;
+
+    }
+}
+
 /* Media Queries for Small Screens */
 @media (max-width: 768px) {
     .aboutus {
@@ -131,6 +163,10 @@
         font-size: 6vw;
         gap: 10vw;
     }
+    .bottom-img{
+        width: -webkit-fill-available;
+
+    }
 }
 
 /* Media Queries for Very Small Screens */
@@ -154,5 +190,10 @@
 
     .aboutus-bottom {
         font-size: 8vw;
+        width: -webkit-fill-available;
+    }
+    .bottom-img{
+        width: -webkit-fill-available;
+
     }
 }

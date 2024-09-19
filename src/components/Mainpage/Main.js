@@ -91,16 +91,16 @@ function Main() {
           </p>
         </div>
 
-       
+
       </div>
 
       {/* Fourth page Services to help page -------------------------------------------------------------------*/}
 
       <h2 className="heading"> Services to help your pet feel more loved</h2>
       <div className="main-fourth-page2">
-        
 
-        
+
+
         <div className="main-fourth-page22">
           <div className="main-fourth-doghaircut">
             <img src={dog3haircut} alt="dog haircut" />
@@ -114,16 +114,18 @@ function Main() {
             <div className="main-fourth-service">
               <div>
                 <p>A home away from home for your furry friends</p>
-                <button> Pet's Shetter</button>
+
               </div>
               <img src={cutdog} alt="image2" />
+              <button> Pet's Shetter</button>
             </div>
             <div className="main-fourth-service">
               <div>
                 <p>A home away from home for your furry friends</p>
-                <button> Pet's Shetter</button>
+
               </div>
               <img src={mendog} alt="image3" />
+              <button> Pet's Shetter</button>
             </div>
           </div>
         </div>
@@ -132,7 +134,7 @@ function Main() {
       {/* ------------Forth We care about your pet  */}
       <h2 className="heading">We care About Your Pet's Wellbeing</h2>
       <div className="main-fourth-page2">
-    
+
 
         <div className="main-fourth-page22">
           <div className="fourth-page23">
@@ -145,21 +147,22 @@ function Main() {
 
           <div className="fourth-page23">
             <img src={closeupdog} alt="cat" />
-            
-              <p>Reliable medication to keep your pets healthy and happy</p>
-              <button>Pet's Health</button>
-           
+
+            <p>Reliable medication to keep your pets healthy and happy</p>
+            <button>Pet's Health</button>
+
           </div>
         </div>
       </div>
 
       {/* ------------------- second last page--------------- */}
 
+
       <div className="main-second-lastpage">
         <div className="image-container">
-          <img src={image1} alt="image1" />
-          <img src={image2} alt="image2" />
-          <img src={image3} alt="image3" />
+          <img className="image1" src={image1} alt="image1" />
+          <img className="image2" src={image2} alt="image2" />
+          <img className="image3" src={image3} alt="image3" />
         </div>
         <div className="secondlastpage">
           <p>
@@ -198,7 +201,8 @@ function Main() {
           <button>Contact Us</button>
         </div>
       </div>
-    </div>
+
+    </div >
   );
 }
 

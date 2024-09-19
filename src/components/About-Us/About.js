@@ -55,7 +55,7 @@ function About() {
         </div>
       </div>
       <div className="aboutus-bottom">
-        <img src={group1} from alt="group1" />
+        <img src={group1} from alt="group1" className="bottom-img" />
       </div>
 
       <Footer />
